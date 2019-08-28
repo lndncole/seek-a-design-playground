@@ -4,7 +4,7 @@ A safe place for friends to play with HTML, CSS, JavaScript, and jQuery, with mo
 ## Contributing:
 
 1. Fork the repo
-2. Clone the repo to your local machine
+2. Clone **your fork** of the repo to your local machine
 3. Navigate to the repo's directory on via the terminal
 4. Add an upstream git remote:
 
