@@ -33,9 +33,10 @@
   font-weight: normal;
   font-style: normal;
 }
-
+/* starter css and high level, body  */
 html, body {
   height: 100%;
+  padding: 2%;
 }
 
 body {
@@ -43,12 +44,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-}
-
-.container {
-  height: 100%;
-  position: relative;
-  border: 10px solid green;
+  background-color: #E4E1E1;
 }
 
 .center {
@@ -58,4 +54,181 @@ body {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+/* container css for most high level containers  */
+.container-parent {
+  height: 100%;
+  position: relative;
+}
+
+.container-header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.container-navSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 4%;
+}
+
+.container-nav {
+  font-family: 'AlexandriaFLF';
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.container-moto {
+  font-family: 'AlexandriaFLF';
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: left;
+}
+
+/* effects for hover on buttons */
+.menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: white;
+  text-align: center;
+  padding: 5px 8px;
+  border-radius: 25px;
+  border: 2px solid #A9A9A9;
+  padding: 5px;
+}
+
+.menu:hover {
+  background-color: #662A61;
+  color: white;
+}
+
+a {
+  color: rgb(58, 55, 55);
+  text-align: left;
+  text-decoration: none;
+  margin-left: 2px;
+}
+
+.a:hover {
+  background-color: #662A61;
+  color: white;
+}
+
+.fas:hover {
+  background-color: #662A61;
+  color: white;
+}
+
+/* logo resizing  */
+.container-logo {
+  max-width: 65%;
+  height: auto;
+}
+
+#mainlogo {
+  max-width: 65%;
+  height: auto;
+  padding-right: -25%;
+}
+
+
+/* main content in split boxes  */
+.container-body {
+  margin-bottom: 20px;
+}
+
+.content {
+  font-family: 'AlexandriaFLF';
+  display: flex;
+  flex-direction: row;
+  border: 5px solid green;
+  border-radius: 25px;
+  background-color: white;
+}
+
+.content-left {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  width: 50%;
+}
+
+.content-right {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  width: 50%;
+}
+
+/* form styling  */
+input {
+  border-radius: 25px;
+  width: 100%;
+  background-color: darkcyan;
+  color: white;
+  padding: 6.5px;
+  margin-top: 1.5px;
+  margin-bottom: 1.5px;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.disclaimer {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 75%;
+  color: darkgray;
+}
+
+textarea {
+  border-radius: 25px;
+  width: 100%;
+  background-color: darkcyan;
+  color: white;
+  padding: 6.5px;
+  margin-top: 1.5px;
+  margin-bottom: 1.5px;
+}
+
+#msg {
+  height: 200px;
+  padding-left: 6.5px;
+  padding-top: 16.5px;
+}
+
+
+/* disclaimer and send button  */
+.container-send {
+  display: flex;
+  flex-direction: row;
+}
+
+.send {
+  background-color: darkcyan;
+  color: white;
+  text-align: center;
+  padding: 5px 8px;
+  border-radius: 25px;
+  border: 2px solid #A9A9A9;
+  padding: 5px;
+  height: 40px;
+  width: 320px;
+  margin-top: 2%;
+}
+
+.send:hover {
+  background-color: #662A61;
+  color: white;
 }
