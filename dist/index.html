@@ -6,10 +6,68 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="../src/index.js"></script>
+    <script src="https://kit.fontawesome.com/9a26908d19.js"></script>
   </head>
   <body>
-    <div class="container">
-      <h1 class="center">Hello World!</h1>
+    <div class="container-parent">
+      <div class="container-header">
+        <div class="container-logo">
+            <img src="https://i.ibb.co/47tS3wH/seeklogo.png" alt="seeklogo" border="0" id="mainlogo">
+        </div>
+        <div class="container-navSection">
+          <div class="container-nav">
+                <div class="menu"> <a href="home.asp" class="fas fa-home">Home</a> </div>
+                <div class="menu"> <a href="projects.asp" class="fas fa-desktop">Projects</a> </div>
+                <div class="menu"> <a href="about.asp" class="fas fa-user">About_Me</a> </div>
+                <div class="menu"> <a href="contact.asp" class="fas fa-envelope">Contact</a> </div>
+          </div>
+          <div class="container-moto">
+            <h2>Custom Designs · Marketing · Branding · And More </h2>
+          </div>
+        </div>
+      </div>
+      <div class="container-body">
+        <div class="content">
+          <div class="content-left">
+            <h2>Contact</h2>
+            <p>LYANDRA SICA Creative Designer<br/>
+                413 Myrtle Avenue West Islip, NY 11795 <br/>
+                creative@seekadesign.com <br/>
+                631.605.5782 <br/>
+                FOLLOW. LIKE. SHARE. <br/>
+                @SeekADesign
+                </p>
+          </div>
+          <div class="content-right">
+            <h2>Questions?<br/>
+            Shoot Me an Email!</h2>
+            <form action="/my-handling-form-page" method="post">
+              <div>
+                <label for="name"></label>
+                <input type="text" id="name" name="user_name" placeholder="name">
+              </div>
+              <div>
+                <label for="mail"></label>
+                <input type="email" id="mail" name="user_mail" placeholder="email">
+              </div>
+              <div>
+                <label for="name"></label>
+                <input type="text" id="subject" name="user_subject" placeholder="subject">
+              </div>
+              <div>
+                <label for="msg"></label>
+                <textarea type="text" id="msg" name="user_message" placeholder="message"></textarea>
+              </div>
+              <div class="container-send">
+                <p class="disclaimer">* All e-mails will be answered in a timely manner. Please include all details when looking for pricing (quality, size, SEND colors, etc.) Marketing e-mails will not be sent to this address.
+                </p>
+                <button type="button" class="send">SEND</button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
