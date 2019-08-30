@@ -120,12 +120,12 @@ a {
 }
 
 .a:hover {
-  background-color: #662A61;
+  background-color: #562554;
   color: white;
 }
 
 .fas:hover {
-  background-color: #662A61;
+  background-color: #562554;
   color: white;
 }
 
@@ -151,7 +151,7 @@ a {
   font-family: 'AlexandriaFLF';
   display: flex;
   flex-direction: row;
-  border: 5px solid green;
+  border: 5px solid #562554;
   border-radius: 25px;
   background-color: white;
 }
@@ -161,6 +161,7 @@ a {
   flex-direction: column;
   margin: 2%;
   width: 50%;
+  align-items: center;
 }
 
 .content-right {
@@ -168,16 +169,18 @@ a {
   flex-direction: column;
   margin: 2%;
   width: 50%;
+  align-items: center;
+  text-align: center;
 }
 
 /* form styling  */
 input {
   border-radius: 25px;
   width: 100%;
-  background-color: darkcyan;
+  background-color: #336D61;
   color: white;
   padding: 6.5px;
-  margin-top: 1.5px;
+  margin-top: 4px;
   margin-bottom: 1.5px;
 }
 
@@ -189,25 +192,22 @@ input {
 .disclaimer {
   font-family: 'Courier New', Courier, monospace;
   font-size: 75%;
-  color: darkgray;
-}
-
-textarea {
-  border-radius: 25px;
-  width: 100%;
-  background-color: darkcyan;
-  color: white;
-  padding: 6.5px;
-  margin-top: 1.5px;
-  margin-bottom: 1.5px;
+  color: rgb(88, 87, 87);
+  text-align: left;
+  padding-right: 5px;
 }
 
 #msg {
   height: 200px;
+  border-radius: 25px;
+  width: 100%;
+  background-color: #336D61;
+  color: white;
+  margin-bottom: 1.5px;
+  margin-top: 6px;
   padding-left: 6.5px;
   padding-top: 16.5px;
 }
-
 
 /* disclaimer and send button  */
 .container-send {
@@ -216,7 +216,7 @@ textarea {
 }
 
 .send {
-  background-color: darkcyan;
+  background-color: #336D61;
   color: white;
   text-align: center;
   padding: 5px 8px;
@@ -229,6 +229,91 @@ textarea {
 }
 
 .send:hover {
-  background-color: #662A61;
+  background-color: #562554;
   color: white;
+}
+
+/* left side content styling */
+.social {
+  display: flex;
+  flex-direction: row;
+  font-size: 3em;
+  justify-content: space-between;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  width: 100%;
+}
+
+.share {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+hr {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ownerName {
+  font-family: AlexandriaFLF-Bold;
+  font-size: 2em;
+  color: #562554;
+}
+
+.ownerDetails {
+  font-family: AlexandriaFLF-Bold;
+  font-size: 1.4em;
+  color: #562554;
+}
+
+.share {
+  font-family: AlexandriaFLF-Bold;
+  /* font-size: 1.4em; */
+  color: #336D61;
+}
+
+.at {
+  font-family: AlexandriaFLF-Bold;
+  color: #562554;
+  font-weight: bolder;
+  font-size: 1.4em;
+}
+
+.fa-twitter {
+  color: white;
+}
+
+.fa-facebook-f {
+  color: white;
+}
+
+.fa-instagram {
+  color: white;
+}
+
+.circle-icon-green {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #336D61;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.circle-icon-purple {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #562554;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
 }
