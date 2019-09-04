@@ -5,88 +5,101 @@
     <title>Seek-A-Design Playground</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="../src/index.js"></script>
     <script src="https://kit.fontawesome.com/9a26908d19.js"></script>
+    <script src="../src/index.js"></script>
   </head>
   <body>
     <div class="container-parent">
       <div class="container-header">
         <div class="container-logo">
-            <img src="https://i.ibb.co/47tS3wH/seeklogo.png" alt="seeklogo" border="0" id="mainlogo">
+          <img src="https://i.ibb.co/47tS3wH/seeklogo.png" alt="seeklogo" id="mainlogo">
         </div>
         <div class="container-navSection">
           <div class="container-nav">
-                <div class="menu"> <a href="home.asp" class="fas fa-home">Home</a> </div>
-                <div class="menu"> <a href="projects.asp" class="fas fa-desktop">Projects</a> </div>
-                <div class="menu"> <a href="about.asp" class="fas fa-user">About_Me</a> </div>
-                <div class="menu"> <a href="contact.asp" class="fas fa-envelope">Contact</a> </div>
+
+            <div class="menu">
+              <span class="fas fa-home"></span><p>Home</p>
+            </div>
+            <div class="menu">
+              <span class="fas fa-desktop"></span><p>Projects</p>
+            </div>
+            <div class="menu">
+              <span class="fas fa-user"></span><p>About Me</p>
+            </div>
+            <div class="menu">
+                <span class="fas fa-envelope"></span><p>Contact</p>
+            </div>
+
           </div>
           <div class="container-moto">
-            <h2>Custom Designs · Marketing · Branding · And More </h2>
+            <h2>Custom Designs · Marketing · Branding · And More</h2>
           </div>
         </div>
       </div>
       <div class="container-body">
         <div class="content">
           <div class="content-left">
-            <span class ="ownerContact" style="color: #336D61; font-size: 3em; font-family: AlexandriaFLF;">
+            <span class="ownerContact">
               CONTACT
             </span>
-            </h2>
-              <hr>
-            <p style="text-align: center;">
-              <span class="ownerName">
-                LYANDRA SICA<br/>
-              </span>
+            <!-- TODO: Replace with static horizontal rule asset when delivered by designer. -->
+            <hr>
+              <div class="ownerTitle">
+                <span class="ownerName">
+                  LYANDRA SICA<br/>
+                </span>
+                Creative Designer<br/>
+              </div>
+              <p class="text-center">
               <span class="ownerDetails">
-                Creative Designer<br/><br/>
                 413 Myrtle Avenue <br/>
                 West Islip, NY 11795 <br/>
                 creative@seekadesign.com <br/>
                 631.605.5782 <br/>
               </span>
-                <hr>
+              <!-- TODO: Replace with static horizontal rule asset when delivered by designer. -->
+              <hr>
               <span class="share">
-                FOLLOW. LIKE. SHARE. <br/>
-                <div class="social">
-                  <div class="circle-icon-green">
-                    <a href="https://www.facebook.com/SeekADesign/" target="_blank" class="fab fa-facebook-f"></a> <br/>
-                  </div>
-                  <div class="circle-icon-purple">
-                    <a href="https://www.facebook.com/SeekADesign/" target="_blank" class="fab fa-twitter"></a> <br/>
-                  </div>
-                  <div class="circle-icon-green">
-                    <a href="https://www.instagram.com/seekadesign/" target="_blank" class="fab fa-instagram"></a> <br/>
-                  </div>
+                FOLLOW. LIKE. SHARE.
+              </span>
+              <div class="social">
+
+                <div class="circle-icon-green">
+                  <a href="https://www.facebook.com/SeekADesign/" target="_blank" class="fab fa-facebook-f"></a> <br/>
                 </div>
-              </span>
-              <span class="at">
-                @SeekADesign
-              </span>
+                <div class="circle-icon-purple">
+                  <a href="https://www.facebook.com/SeekADesign/" target="_blank" class="fab fa-twitter"></a> <br/>
+                </div>
+                <div class="circle-icon-green">
+                  <a href="https://www.instagram.com/seekadesign/" target="_blank" class="fab fa-instagram"></a> <br/>
+                </div>
+
+              </div>
+              <span class="at">@SeekADesign</span>
             </p>
           </div>
           <div class="content-right">
-            <h2>Questions?<br/>
-            Shoot Me an Email!</h2>
+            <h2>Questions?</h2>
+            <h2>Shoot Me an Email!</h2>
             <form action="/my-handling-form-page" method="post">
               <div>
                 <label for="name"></label>
-                <input type="text" id="name" name="user_name" placeholder="name">
+                <input type="text" id="name" name="user_name" placeholder="NAME">
               </div>
               <div>
                 <label for="mail"></label>
-                <input type="email" id="mail" name="user_mail" placeholder="email">
+                <input type="email" id="mail" name="user_mail" placeholder="E-MAIL">
               </div>
               <div>
-                <label for="name"></label>
-                <input type="text" id="subject" name="user_subject" placeholder="subject">
+                <label for="subject"></label>
+                <input type="text" id="subject" name="user_subject" placeholder="SUBJECT">
               </div>
               <div>
                 <label for="msg"></label>
-                <textarea id="msg" name="user_message" placeholder="message"></textarea>
+                <textarea id="msg" name="user_message" placeholder="MESSAGE"></textarea>
               </div>
               <div class="container-send">
-                <p class="disclaimer">* All e-mails will be answered in a timely manner. Please include all details when looking for pricing (quality, size, SEND colors, etc.) Marketing e-mails will not be sent to this address.
+                <p class="disclaimer">* All e-mails will be answered in a timely manner. Please include all details when looking for pricing (quality, size, colors, etc.) Marketing e-mails will not be sent to this address.
                 </p>
                 <button type="button" class="send">SEND</button>
               </div>

@@ -99,12 +99,13 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: space-between;
   background-color: white;
   text-align: center;
-  padding: 5px 8px;
+  padding: 2%;
   border-radius: 25px;
   border: 2px solid #A9A9A9;
-  padding: 5px;
+  width: 25%;
 }
 
 .menu:hover {
@@ -113,20 +114,22 @@ body {
 }
 
 a {
-  color: rgb(58, 55, 55);
-  text-align: left;
   text-decoration: none;
-  margin-left: 2px;
-}
-
-.a:hover {
-  background-color: #562554;
-  color: white;
 }
 
 .fas:hover {
   background-color: #562554;
   color: white;
+}
+
+p {
+  margin: 0px;
+  margin-left: 7.5%;
+  margin-right: 10.5%;
+}
+
+fas {
+  height: 0%;
 }
 
 /* logo resizing  */
@@ -239,9 +242,9 @@ input {
   flex-direction: row;
   font-size: 3em;
   justify-content: space-between;
-  margin-top: 6%;
+  margin-top: 7%;
   margin-bottom: 6%;
-  width: 100%;
+  width: 50%;
 }
 
 .share {
@@ -257,6 +260,16 @@ hr {
   margin-right: auto;
 }
 
+.ownerTitle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: AlexandriaFLF-Bold;
+  font-size: 1.4em;
+  color: #562554;
+  margin-bottom: 8%;
+}
+
 .ownerName {
   font-family: AlexandriaFLF-Bold;
   font-size: 2em;
@@ -267,6 +280,16 @@ hr {
   font-family: AlexandriaFLF-Bold;
   font-size: 1.4em;
   color: #562554;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.ownerContact {
+  font-family: AlexandriaFLF;
+  color: #336D61;
+  font-size: 3em;
 }
 
 .share {
