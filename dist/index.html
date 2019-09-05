@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Seek-A-Design Playground</title>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/9a26908d19.js"></script>
@@ -12,22 +13,30 @@
     <div class="container-parent">
       <div class="container-header">
         <div class="container-logo">
-          <img src="https://i.ibb.co/47tS3wH/seeklogo.png" alt="seeklogo" id="mainlogo">
+          <img src="seeklogo.png" alt="seeklogo" id="mainlogo">
         </div>
         <div class="container-navSection">
           <div class="container-nav">
 
             <div class="menu">
-              <span class="fas fa-home"></span><p>Home</p>
+              <div class="menu-text-container">
+                <span class="fas fa-home"></span><span class="menu-text">Home</span>
+              </div>
             </div>
             <div class="menu">
-              <span class="fas fa-desktop"></span><p>Projects</p>
+              <div class="menu-text-container">
+                <span class="fas fa-desktop"></span><span class="menu-text">Projects</span>
+              </div>
             </div>
             <div class="menu">
-              <span class="fas fa-user"></span><p>About Me</p>
+              <div class="menu-text-container">
+                <span class="fas fa-user"></span><span class="menu-text">About Me</span>
+              </div>
             </div>
             <div class="menu">
-                <span class="fas fa-envelope"></span><p>Contact</p>
+              <div class="menu-text-container">
+                <span class="fas fa-envelope"></span><span class="menu-text">Contact</span>
+              </div>
             </div>
 
           </div>
@@ -39,48 +48,54 @@
       <div class="container-body">
         <div class="content">
           <div class="content-left">
-            <span class="ownerContact">
+            <span class="owner-contact">
               CONTACT
             </span>
             <!-- TODO: Replace with static horizontal rule asset when delivered by designer. -->
             <hr>
-              <div class="ownerTitle">
-                <span class="ownerName">
-                  LYANDRA SICA<br/>
-                </span>
-                Creative Designer<br/>
-              </div>
-              <p class="text-center">
-              <span class="ownerDetails">
-                413 Myrtle Avenue <br/>
-                West Islip, NY 11795 <br/>
-                creative@seekadesign.com <br/>
-                631.605.5782 <br/>
+            <div class="owner-name-title">
+              <span class="owner-name">
+                LYANDRA SICA
+              </span>
+              <span class="owner-title">
+                Creative Designer
+              </span>
+            </div>
+            <div class="social-text-center">
+              <span class="owner-details">
+                <div>413 Myrtle Avenue</div>
+                <div>West Islip, NY 11795</div>
+                <div>creative@seekadesign.com</div>
+                <div>631.605.5782</div>
               </span>
               <!-- TODO: Replace with static horizontal rule asset when delivered by designer. -->
               <hr>
-              <span class="share">
-                FOLLOW. LIKE. SHARE.
-              </span>
-              <div class="social">
+              <div class="social-container">
+                <div class="fls">
+                  FOLLOW. LIKE. SHARE.
+                </div>
+                <div class="social">
 
-                <div class="circle-icon-green">
-                  <a href="https://www.facebook.com/SeekADesign/" target="_blank" class="fab fa-facebook-f"></a> <br/>
-                </div>
-                <div class="circle-icon-purple">
-                  <a href="https://www.facebook.com/SeekADesign/" target="_blank" class="fab fa-twitter"></a> <br/>
-                </div>
-                <div class="circle-icon-green">
-                  <a href="https://www.instagram.com/seekadesign/" target="_blank" class="fab fa-instagram"></a> <br/>
-                </div>
+                  <div class="circle-icon-green">
+                    <a href="https://www.facebook.com/SeekADesign/" target="_blank" class="fab fa-facebook-f"></a>
+                  </div>
+                  <div class="circle-icon-purple">
+                    <a href="https://www.facebook.com/SeekADesign/" target="_blank" class="fab fa-twitter"></a>
+                  </div>
+                  <div class="circle-icon-green">
+                    <a href="https://www.instagram.com/seekadesign/" target="_blank" class="fab fa-instagram"></a>
+                  </div>
 
+                </div>
+                <div class="at">@SeekADesign</div>
               </div>
-              <span class="at">@SeekADesign</span>
-            </p>
+            </div>
           </div>
           <div class="content-right">
-            <h2>Questions?</h2>
-            <h2>Shoot Me an Email!</h2>
+            <div class="questions">
+              <div>Questions?</div>
+              <div>Shoot Me an Email!</div>
+            </div>
             <form action="/my-handling-form-page" method="post">
               <div>
                 <label for="name"></label>
@@ -99,8 +114,9 @@
                 <textarea id="msg" name="user_message" placeholder="MESSAGE"></textarea>
               </div>
               <div class="container-send">
-                <p class="disclaimer">* All e-mails will be answered in a timely manner. Please include all details when looking for pricing (quality, size, colors, etc.) Marketing e-mails will not be sent to this address.
-                </p>
+                <span class="disclaimer">
+                  * All e-mails will be answered in a timely manner. Please include all details when looking for pricing (quality, size, colors, etc.) Marketing e-mails will not be sent to this address.
+                </span>
                 <button type="button" class="send">SEND</button>
               </div>
 
