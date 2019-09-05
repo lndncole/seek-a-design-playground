@@ -116,15 +116,23 @@ a {
   text-decoration: none;
 }
 
+
+.fas {
+  font-size: 25px;
+  font-weight: 500;
+  color: rgb(112, 112, 112);
+}
+
 .fas:hover {
   background-color: #562554;
   color: white;
 }
 
 .menu-text {
-  margin: 0px;
+  align-self: center;
   margin-left: 7.5%;
   letter-spacing: 4px;
+  font-weight: 900;
 }
 
 .moto{
@@ -303,13 +311,8 @@ input {
   margin-top: 7%;
 }
 
-.share {
-  font-family: AlexandriaFLF-Bold;
-  color: #25807D;
-}
-
 .at {
-  font-family: AlexandriaFLF;
+  font-family: 'AlexandriaFLF';
   color: #562554;
   font-weight: bolder;
   font-size: 20px;
