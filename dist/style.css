@@ -185,8 +185,9 @@ a {
 
 /* content right  */
 .questions {
-  font-family: 'Amatic SC', cursive;
-  font-size: 30px;
+  font-family: 'ChandelleDisplay';
+  Color: rgb(112, 112, 112);
+  font-size: 22.5px;
   margin: 0%;
 }
 
