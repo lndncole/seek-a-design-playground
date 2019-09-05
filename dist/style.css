@@ -107,15 +107,9 @@ body {
   justify-content: center;
 }
 
-.menu:hover {
-  background-color: #662A61;
-  color: white;
-}
-
 a {
   text-decoration: none;
 }
-
 
 .fas {
   font-size: 25px;
@@ -123,8 +117,13 @@ a {
   color: rgb(112, 112, 112);
 }
 
-.fas:hover {
-  background-color: #562554;
+.menu:hover {
+  background-color: #662A61;
+  color: white;
+}
+
+.menu:hover .fas{
+  background-color: #662A61;
   color: white;
 }
 
@@ -135,9 +134,9 @@ a {
   font-weight: 900;
 }
 
-.moto{
+.moto {
   color: rgb(112, 112, 112);
-  font-weight: 750;
+  font-weight: 900;
 }
 
 /* logo resizing  */
