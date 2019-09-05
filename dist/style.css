@@ -252,7 +252,11 @@ input {
   padding: 4%;
 }
 
-hr {
+.dotted {
+  border-top: 1px dashed black;
+}
+
+.fancy {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
