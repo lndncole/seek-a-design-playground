@@ -88,7 +88,7 @@ body {
   justify-content: center;
 }
 
-/* effects for hover on buttons */
+/* effects for hover on buttons AND header styles*/
 .menu {
   display: flex;
   flex-direction: row;
@@ -125,6 +125,11 @@ a {
   margin: 0px;
   margin-left: 7.5%;
   letter-spacing: 4px;
+}
+
+.moto{
+  color: rgb(112, 112, 112);
+  font-weight: 750;
 }
 
 /* logo resizing  */
