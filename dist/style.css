@@ -142,11 +142,11 @@ a {
 .menu-text {
   align-self: center;
   margin-left: 7.5%;
-  letter-spacing: 4px;
   font-weight: 900;
 }
 
 .moto {
+  letter-spacing: 2px;
   color: rgb(112, 112, 112);
   font-weight: 900;
 }
