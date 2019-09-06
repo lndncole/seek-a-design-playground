@@ -49,6 +49,9 @@ body {
 
 /* container css for most high level containers  */
 .container-parent {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
   max-width: 1000px;
   height: 100%;
   position: relative;
