@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Seek-A-Design Playground</title>
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/9a26908d19.js"></script>
     <script src="../src/index.js"></script>
@@ -95,22 +94,23 @@
               <div>QUESTIONS?</div>
               <div>SHOOT ME AN EMAIL!</div>
             </div>
-            <form action="/my-handling-form-page" method="post">
+            <form action="/my-contact-form-page" method="post">
+
               <div>
                 <label for="name"></label>
-                <input type="text" id="name" name="user_name" placeholder="NAME">
+                <input type="text" id="name" name="user_name" placeholder="NAME" onkeydown="nameInputBackgroundChange()">
               </div>
               <div>
                 <label for="mail"></label>
-                <input type="email" id="mail" name="user_mail" placeholder="E-MAIL">
+                <input type="email" id="mail" name="user_mail" placeholder="E-MAIL" onkeydown="mailInputBackgroundChange()">
               </div>
               <div>
                 <label for="subject"></label>
-                <input type="text" id="subject" name="user_subject" placeholder="SUBJECT">
+                <input type="text" id="subject" name="user_subject" placeholder="SUBJECT" onkeydown="subjectInputBackgroundChange()">
               </div>
               <div>
                 <label for="msg"></label>
-                <textarea id="msg" name="user_message" placeholder="MESSAGE"></textarea>
+                <textarea id="msg" name="user_message" placeholder="MESSAGE" onkeydown="msgInputBackgroundChange()"></textarea>
               </div>
               <div class="container-send">
                 <span class="disclaimer">
@@ -124,5 +124,32 @@
         </div>
       </div>
     </div>
+
+    <script>
+      function nameInputBackgroundChange() {
+        var nameField = document.getElementById("name");
+        nameField.style.backgroundColor = "white";
+        nameField.style.color = "#4D766E";
+      }
+
+      function mailInputBackgroundChange() {
+        var mailField = document.getElementById("mail");
+        mailField.style.backgroundColor = "white";
+        mailField.style.color = "#4D766E";
+      }
+
+      function subjectInputBackgroundChange() {
+        var subjectField = document.getElementById("subject");
+        subjectField.style.backgroundColor = "white";
+        subjectField.style.color = "#4D766E";
+      }
+
+      function msgInputBackgroundChange() {
+        var msgField = document.getElementById("msg");
+        msgField.style.backgroundColor = "white";
+        msgField.style.color = "#4D766E";
+      }
+    </script>
+
   </body>
 </html>
