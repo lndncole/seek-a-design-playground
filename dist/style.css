@@ -93,10 +93,19 @@ body {
   display: flex;
   flex-direction: row;
   padding: 1%;
-  border-radius: 25px;
   background-color: white;
   border: 4px solid rgb(112, 112, 112);
   width: 25%;
+}
+
+#left-button {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+#right-button {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 .menu-text-container {
