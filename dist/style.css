@@ -7,29 +7,37 @@
 @font-face {
   font-family: 'AlexandriaFLF';
   src: url('./assets/fonts/AlexandriaFLF/AlexandriaFLF.ttf.woff') format('woff'),
-       url('./assets/fonts/AlexandriaFLF/AlexandriaFLF.ttf.svg#AlexandriaFLF') format('svg'),
+       url('./assets/fonts/AlexandriaFLF/AlexandriaFLF.ttf.svg#AlexandriaFLF')
+       format('svg'),
        url('./assets/fonts/AlexandriaFLF/AlexandriaFLF.ttf.eot'),
-       url('./assets/fonts/AlexandriaFLF/AlexandriaFLF.ttf.eot?#iefix') format('embedded-opentype');
+       url('./assets/fonts/AlexandriaFLF/AlexandriaFLF.ttf.eot?#iefix')
+       format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'AlexandriaFLF-Bold';
-  src: url('./assets/fonts/AlexandriaFLF-Bold/AlexandriaFLF-Bold.ttf.woff') format('woff'),
-       url('./assets/fonts/AlexandriaFLF-Bold/AlexandriaFLF-Bold.ttf.svg#AlexandriaFLF-Bold') format('svg'),
+  src: url('./assets/fonts/AlexandriaFLF-Bold/AlexandriaFLF-Bold.ttf.woff')
+  format('woff'),
+       url('./assets/fonts/AlexandriaFLF-Bold/AlexandriaFLF-Bold.ttf.svg#AlexandriaFLF-Bold')
+       format('svg'),
        url('./assets/fonts/AlexandriaFLF-Bold/AlexandriaFLF-Bold.ttf.eot'),
-       url('./assets/fonts/AlexandriaFLF-Bold/AlexandriaFLF-Bold.ttf.eot?#iefix') format('embedded-opentype');
+       url('./assets/fonts/AlexandriaFLF-Bold/AlexandriaFLF-Bold.ttf.eot?#iefix')
+       format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'ChandelleDisplay';
-  src: url('./assets/fonts/ChandelleDisplay/ChandelleDisplay.ttf.woff') format('woff'),
-       url('./assets/fonts/ChandelleDisplay/ChandelleDisplay.ttf.svg#ChandelleDisplay') format('svg'),
+  src: url('./assets/fonts/ChandelleDisplay/ChandelleDisplay.ttf.woff')
+  format('woff'),
+       url('./assets/fonts/ChandelleDisplay/ChandelleDisplay.ttf.svg#ChandelleDisplay')
+       format('svg'),
        url('./assets/fonts/ChandelleDisplay/ChandelleDisplay.ttf.eot'),
-       url('./assets/fonts/ChandelleDisplay/ChandelleDisplay.ttf.eot?#iefix') format('embedded-opentype');
+       url('./assets/fonts/ChandelleDisplay/ChandelleDisplay.ttf.eot?#iefix')
+       format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -372,4 +380,27 @@ input {
   vertical-align: middle;
   margin-left: 6%;
   margin-right: 6%;
+}
+
+/* form functionality code */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.show {
+  display: block;
 }
