@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
 //selecting html elements for use in color change functions
 document.getElementById("name").onkeydown = function() {nameInputBackgroundChange()};
 document.getElementById("mail").onkeydown = function() {mailInputBackgroundChange()};
@@ -91,7 +92,4 @@ function contactValueAlert(){
 //   setInterval(function() {
 //     $('.center').fadeToggle(1500);
 //   }, 1500);
-
 });
-
-
