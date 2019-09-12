@@ -2,20 +2,23 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Seek-A-Design Playground</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7fcb54df80.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="../src/index.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
 
     <div class="parent-container">
 
+      <div id="logo-img">
+      </div>
+
       <nav>
         <ul class="navbar">
-          <li class="nav-home" id="left-button">
+          <li class="nav-home" id="left-nav-button">
             <i class="fas fa-home"></i> Home
           </li>
           <li class="nav-projects">
@@ -24,7 +27,7 @@
           <li class="nav-about">
             <i class="fas fa-info-circle"></i> About Me
           </li>
-          <li class="nav-about">
+          <li class="nav-contact" id="right-nav-item">
             <i class="fas fa-comment-dots"></i> Contact
           </li>
         </ul>
@@ -37,6 +40,7 @@
       <div class="whoisseeking-container">
         <div class="whois">
           <h2> WHO IS SEEK-A-DESIGN?</h2>
+          <!-- TODO: Replace with actual horizontal rule static asset when designer supplies the file. -->
           <hr>
           <div class="whois-text">
             <p>
@@ -96,7 +100,7 @@
               </li>
 
               <li>
-                “Seek-a-Design helped create invitations, place-cards,
+                “Seek-A-Design helped create invitations, place-cards,
                 signage and thank you cards for my great-grandmothers
                 centennial celebration. Lyandra was patient, collaborative
                 and took into consideration all of our wants while
@@ -123,22 +127,25 @@
 
       <div class="social-container">
 
-        <div class="circle-icon-green">
-          <a href="https://www.facebook.com/SeekADesign/"
-          target="_blank" class="fab fa-facebook-f"></a>
-        </div>
-        <div class="circle-icon-purple">
-          <a href="https://www.facebook.com/SeekADesign/"
-          target="_blank" class="fab fa-twitter"></a>
-        </div>
-        <div class="circle-icon-green">
-          <a href="https://www.instagram.com/seekadesign/"
-          target="_blank" class="fab fa-instagram"></a>
-        </div>
+        <a href="https://www.facebook.com/SeekADesign/">
+          <div class="circle-icon-green">
+            <i class="fab fa-facebook-f"></i>
+          </div>
+        </a>
+
+        <a href="https://www.twitter.com/SeekADesign/">
+          <div class="circle-icon-purple">
+            <i class="fab fa-twitter"></i>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/seekadesign/">
+          <div class="circle-icon-green">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </a>
 
       </div>
-
     </div>
-
   </body>
 </html>
