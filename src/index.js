@@ -1,19 +1,21 @@
 $(document).ready(function(){
 
-  // Jquery variables
+  // Selections:
   var $nameInput = $('#name');
   var $mailInput = $('#mail');
   var $subjectInput = $('#subject');
   var $msgInput = $('#msg');
+  var $contactSend = $('#contact-send');
 
-  // event listeners for background change functionality
-  $nameInput.on('keyup', InputBackgroundChange);
-  $mailInput.on('keyup', InputBackgroundChange);
-  $subjectInput.on('keyup', InputBackgroundChange);
-  $msgInput.on('keyup', InputBackgroundChange);
+  // Event listeners:
+  $nameInput.on('keyup', invertInputColors);
+  $mailInput.on('keyup', invertInputColors);
+  $subjectInput.on('keyup', invertInputColors);
+  $msgInput.on('keyup', invertInputColors);
+  $contactSend.on('click', handleFormButtonClick);
 
-  // function application of background change
-  function InputBackgroundChange() {
+  // Event handlers:
+  function invertInputColors() {
     if($(this).val()){
       $(this).css('background-color', 'white');
       $(this).css('color', '#4D766E');
@@ -23,12 +25,13 @@ $(document).ready(function(){
     }
   }
 
-
-  var $contactSend = $('#contact-send');
-  // function to display input values in window alert or alert user of needed inputs
-  $contactSend.on('click', contactValueAlert);
-  function contactValueAlert(){
-    if($nameInput.val() === '' || $mailInput.val() === '' || $subjectInput.val() === '' || $msgInput.val() === '') {
+  function handleFormButtonClick() {
+    if(
+      $nameInput.val() === '' ||
+      $mailInput.val() === '' ||
+      $subjectInput.val() === '' ||
+      $msgInput.val() === ''
+    ) {
       alert("All required fields of the contact form have not been completed.")
     } else {
       alert(`${$nameInput.val()} \n ${$mailInput.val()} \n ${$subjectInput.val()} \n ${$msgInput.val()}`);
