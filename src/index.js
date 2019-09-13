@@ -15,7 +15,7 @@ $(document).ready(function(){
   $mailInput.on('keyup', invertInputColors);
   $subjectInput.on('keyup', invertInputColors);
   $msgInput.on('keyup', invertInputColors);
-  $contactSend.on('click', handleFormButtonClick);
+  $contactSend.on('click', handleFormInputKeyUp);
   $dropMenuText.on('click', handleMenuColorChangeClick);
 
 
@@ -30,7 +30,7 @@ $(document).ready(function(){
     }
   }
 
-  function handleFormButtonClick() {
+  function handleFormInputKeyUp() {
     if(
       $nameInput.val() === '' ||
       $mailInput.val() === '' ||
@@ -57,6 +57,19 @@ $(document).ready(function(){
   function handleMenuColorChangeClick() {
 
     $(this).css('color', 'yellow');
+
+    var div = document.getElementById('projectsdrop');
+
+    console.log(div.childNodes);
+
+    for (var i = 0; i <  div.childNodes.length; i++) {
+
+        if ($(this).css('color') === 'yellow') {
+          console.log('hello')
+        }
+
+    }
+
   }
 
 
