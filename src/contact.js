@@ -6,6 +6,9 @@ $(document).ready(function(){
   var $subjectInput = $('#subject');
   var $msgInput = $('#msg');
   var $contactSend = $('#contact-send');
+  var $menu = $(".menu");
+  var $subOne = $('.sub-one');
+  var $dropMenuText = $('.drop-menu-text');
 
   // Event listeners:
   $nameInput.on('keyup', handleFormInputKeyUp);
@@ -13,6 +16,7 @@ $(document).ready(function(){
   $subjectInput.on('keyup', handleFormInputKeyUp);
   $msgInput.on('keyup', handleFormInputKeyUp);
   $contactSend.on('click', handleFormButtonClick);
+  $dropMenuText.on('click', handleMenuColorChangeClick);
 
   // Event handlers:
   function handleFormInputKeyUp() {
@@ -36,6 +40,23 @@ $(document).ready(function(){
     } else {
       alert(`${$nameInput.val()} \n ${$mailInput.val()} \n ${$subjectInput.val()} \n ${$msgInput.val()}`);
     }
+  }
+
+  $menu.hover(
+    function(){
+        $('.sub-one', this).slideDown(300);
+        $('.sub-one', this).css('width', $(this).width());
+    },
+    function(){
+        $('.sub-one',this).slideUp(100);
+    }
+  );
+
+  function handleMenuColorChangeClick() {
+    $( ".drop-menu-text" ).each(function( index ) {
+      $( this ).css('color', 'white');
+    });
+    $(this).css('color', 'yellow');
   }
 
 });

@@ -60,7 +60,6 @@ body {
   position: relative;
   display: flex;
   flex-direction: row;
-  margin-bottom: 20px;
 }
 
 .container-navSection {
@@ -91,16 +90,38 @@ body {
 }
 
 /* effects for hover on buttons AND header styles*/
+.sub-one{
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 29px;
+  width: 25%;
+  border-top: white dashed 2px;
+  letter-spacing: 1px;
+}
+
 .menu {
   display: flex;
   flex-direction: row;
-  padding: 1%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
   background-color: white;
-  border: 4px solid rgb(112, 112, 112);
+  border-top: 4px solid rgb(112, 112, 112);
+  border-right: 4px solid rgb(112, 112, 112);
+  border-bottom: 4px solid rgb(112, 112, 112);
   width: 25%;
 }
 
+.menu-drop {
+  display: flex;
+  flex-direction: row;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  background-color: rgb(95,47,94);;
+}
+
 #left-button {
+  border-left: 4px solid rgb(112, 112, 112);
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
 }
@@ -116,6 +137,18 @@ body {
   flex-wrap: nowrap;
   width: 100%;
   justify-content: center;
+}
+
+.drop-menu-text-container {
+  font-weight: 900;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+  color: white;
+  font-size: 13px;
 }
 
 a {
