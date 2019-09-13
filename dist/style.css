@@ -7,37 +7,29 @@
 @font-face {
   font-family: 'AlexandriaFLF';
   src: url('./assets/fonts/AlexandriaFLF/AlexandriaFLF.ttf.woff') format('woff'),
-       url('./assets/fonts/AlexandriaFLF/AlexandriaFLF.ttf.svg#AlexandriaFLF')
-       format('svg'),
+       url('./assets/fonts/AlexandriaFLF/AlexandriaFLF.ttf.svg#AlexandriaFLF') format('svg'),
        url('./assets/fonts/AlexandriaFLF/AlexandriaFLF.ttf.eot'),
-       url('./assets/fonts/AlexandriaFLF/AlexandriaFLF.ttf.eot?#iefix')
-       format('embedded-opentype');
+       url('./assets/fonts/AlexandriaFLF/AlexandriaFLF.ttf.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'AlexandriaFLF-Bold';
-  src: url('./assets/fonts/AlexandriaFLF-Bold/AlexandriaFLF-Bold.ttf.woff')
-  format('woff'),
-       url('./assets/fonts/AlexandriaFLF-Bold/AlexandriaFLF-Bold.ttf.svg#AlexandriaFLF-Bold')
-       format('svg'),
+  src: url('./assets/fonts/AlexandriaFLF-Bold/AlexandriaFLF-Bold.ttf.woff') format('woff'),
+       url('./assets/fonts/AlexandriaFLF-Bold/AlexandriaFLF-Bold.ttf.svg#AlexandriaFLF-Bold') format('svg'),
        url('./assets/fonts/AlexandriaFLF-Bold/AlexandriaFLF-Bold.ttf.eot'),
-       url('./assets/fonts/AlexandriaFLF-Bold/AlexandriaFLF-Bold.ttf.eot?#iefix')
-       format('embedded-opentype');
+       url('./assets/fonts/AlexandriaFLF-Bold/AlexandriaFLF-Bold.ttf.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'ChandelleDisplay';
-  src: url('./assets/fonts/ChandelleDisplay/ChandelleDisplay.ttf.woff')
-  format('woff'),
-       url('./assets/fonts/ChandelleDisplay/ChandelleDisplay.ttf.svg#ChandelleDisplay')
-       format('svg'),
+  src: url('./assets/fonts/ChandelleDisplay/ChandelleDisplay.ttf.woff') format('woff'),
+       url('./assets/fonts/ChandelleDisplay/ChandelleDisplay.ttf.svg#ChandelleDisplay') format('svg'),
        url('./assets/fonts/ChandelleDisplay/ChandelleDisplay.ttf.eot'),
-       url('./assets/fonts/ChandelleDisplay/ChandelleDisplay.ttf.eot?#iefix')
-       format('embedded-opentype');
+       url('./assets/fonts/ChandelleDisplay/ChandelleDisplay.ttf.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -66,10 +58,8 @@ body {
 }
 
 .container-header {
-  position: relative;
   display: flex;
   flex-direction: row;
-  margin-bottom: 20px;
 }
 
 .container-navSection {
@@ -80,14 +70,15 @@ body {
   width: 100%;
 }
 
-.container-nav {
+nav .main {
   font-family: 'AlexandriaFLF';
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
   margin-top: 2%;
   width: 100%;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .container-moto {
@@ -100,16 +91,39 @@ body {
 }
 
 /* effects for hover on buttons AND header styles*/
+
+.sub-one{
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 29px;
+  width: 25%;
+  border-top: white dashed 2px;
+  letter-spacing: 1px;
+}
+
 .menu {
   display: flex;
   flex-direction: row;
-  padding: 1%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
   background-color: white;
-  border: 4px solid rgb(112, 112, 112);
+  border-top: 4px solid rgb(112, 112, 112);
+  border-right: 4px solid rgb(112, 112, 112);
+  border-bottom: 4px solid rgb(112, 112, 112);
   width: 25%;
 }
 
+.menu-drop {
+  display: flex;
+  flex-direction: row;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  background-color: rgb(95,47,94);;
+}
+
 #left-button {
+  border-left: 4px solid rgb(112, 112, 112);
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
 }
@@ -125,6 +139,18 @@ body {
   flex-wrap: nowrap;
   width: 100%;
   justify-content: center;
+}
+
+.drop-menu-text-container {
+  font-weight: 900;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
 }
 
 a {
@@ -290,9 +316,10 @@ input {
 }
 
 .fancy {
-  width: 60%;
+  width: 55%;
   margin-left: auto;
   margin-right: auto;
+  fill: red;
 }
 
 .owner-name-title{
@@ -380,27 +407,4 @@ input {
   vertical-align: middle;
   margin-left: 6%;
   margin-right: 6%;
-}
-
-/* form functionality code */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.show {
-  display: block;
 }
