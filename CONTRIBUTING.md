@@ -12,6 +12,8 @@
 
 ## Detailed Workflow
 
+### Diagrammatic Overview
+
 ![](images/git-workflow-diagram.png)
 
 ### Fork the repo
