@@ -8,14 +8,14 @@ $(document).ready(function(){
   var $contactSend = $('#contact-send');
 
   // Event listeners:
-  $nameInput.on('keyup', invertInputColors);
-  $mailInput.on('keyup', invertInputColors);
-  $subjectInput.on('keyup', invertInputColors);
-  $msgInput.on('keyup', invertInputColors);
+  $nameInput.on('keyup', handleFormInputKeyUp);
+  $mailInput.on('keyup', handleFormInputKeyUp);
+  $subjectInput.on('keyup', handleFormInputKeyUp);
+  $msgInput.on('keyup', handleFormInputKeyUp);
   $contactSend.on('click', handleFormButtonClick);
 
   // Event handlers:
-  function invertInputColors() {
+  function handleFormInputKeyUp() {
     if($(this).val()){
       $(this).css('background-color', 'white');
       $(this).css('color', '#4D766E');
