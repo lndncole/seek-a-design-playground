@@ -52,7 +52,7 @@ body {
 }
 
 #logo-img {
-  background-image: url('SeekADesign_VectorLogo.svg');
+  background-image: url('./assets/logos/SeekADesign_VectorLogo.svg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 25%;
@@ -295,8 +295,8 @@ a {
 }
 
 hr {
-  display:block;
-  background-image: url('OrnamentalDivider.svg');
+  display: block;
+  background-image: url('./dist/assets/other/OrnamentalDividier.svg');
   border: 0px;
   height:10px;
 }
