@@ -6,10 +6,123 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="../src/index.js"></script>
+    <script src="https://kit.fontawesome.com/9a26908d19.js"></script>
   </head>
   <body>
-    <div class="container">
-      <h1 class="center">Hello World!</h1>
+    <div class="container-parent">
+      <div class="container-header">
+        <div class="container-logo">
+          <img src="seeklogo.png" alt="seeklogo" id="mainlogo">
+        </div>
+        <div class="container-navSection">
+          <div class="container-nav">
+
+            <div class="menu" id="left-button">
+              <div class="menu-text-container">
+                <span class="fas fa-home"></span><span class="menu-text">HOME</span>
+              </div>
+            </div>
+            <div class="menu">
+              <div class="menu-text-container">
+                <span class="fas fa-desktop"></span><span class="menu-text">PROJECTS</span>
+              </div>
+            </div>
+            <div class="menu">
+              <div class="menu-text-container">
+                <span class="fas fa-user"></span><span class="menu-text">ABOUT ME</span>
+              </div>
+            </div>
+            <div class="menu" id="right-button">
+              <div class="menu-text-container">
+                <span class="fas fa-envelope"></span><span class="menu-text">CONTACT</span>
+              </div>
+            </div>
+
+          </div>
+          <div class="container-moto">
+            <h2 class="moto">CUSTOM DESIGNS · MARKETING · BRANDING · AND MORE</h2>
+          </div>
+        </div>
+      </div>
+      <div class="container-body">
+        <div class="content">
+          <div class="content-left">
+            <div class="owner-contact">
+              CONTACT
+            </div>
+            <img class="fancy" src="./assets/other/OrnamentalDivider.svg" />
+            <div class="owner-name-title">
+              <span class="owner-name">
+                LYANDRA SICA
+              </span>
+              <span class="owner-title">
+                Creative Designer
+              </span>
+            </div>
+            <div class="social-text-center">
+              <div class="owner-details">
+                <div>413 Myrtle Avenue</div>
+                <div>West Islip, NY 11795</div>
+                <div>creative@seekadesign.com</div>
+                <div>631.605.5782</div>
+              </div>
+              <!-- TODO: Replace with static horizontal rule asset when delivered by designer. -->
+              <hr class="dotted">
+              <div class="social-container">
+                <div class="fls">
+                  FOLLOW. LIKE. SHARE.
+                </div>
+                <div class="social">
+
+                  <div class="circle-icon-green">
+                    <a href="https://www.facebook.com/SeekADesign/" target="_blank" class="fab fa-facebook-f"></a>
+                  </div>
+                  <div class="circle-icon-purple">
+                    <a href="https://www.facebook.com/SeekADesign/" target="_blank" class="fab fa-twitter"></a>
+                  </div>
+                  <div class="circle-icon-green">
+                    <a href="https://www.instagram.com/seekadesign/" target="_blank" class="fab fa-instagram"></a>
+                  </div>
+
+                </div>
+                <div class="at">@SeekADesign</div>
+              </div>
+            </div>
+          </div>
+          <div class="content-right">
+            <div class="questions">
+              <div>QUESTIONS?</div>
+              <div>SHOOT ME AN EMAIL!</div>
+            </div>
+            <form action="/my-contact-form-page" method="post">
+
+              <div>
+                <label for="name"></label>
+                <input type="text" id="name" name="user_name" placeholder="NAME">
+              </div>
+              <div>
+                <label for="mail"></label>
+                <input type="email" id="mail" name="user_mail" placeholder="E-MAIL">
+              </div>
+              <div>
+                <label for="subject"></label>
+                <input type="text" id="subject" name="user_subject" placeholder="SUBJECT">
+              </div>
+              <div>
+                <label for="msg"></label>
+                <textarea id="msg" name="user_message" placeholder="MESSAGE"></textarea>
+              </div>
+              <div class="container-send">
+                <span class="disclaimer">
+                  * All e-mails will be answered in a timely manner. Please include all details when looking for pricing (quality, size, colors, etc.) Marketing e-mails will not be sent to this address.
+                </span>
+                <button type="button" class="send" id="contact-send">SEND</button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
