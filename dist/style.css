@@ -293,10 +293,3 @@ a {
   text-decoration: none;
   color: white;
 }
-
-hr {
-  display: block;
-  background-image: url('./dist/assets/other/OrnamentalDividier.svg');
-  border: 0px;
-  height:10px;
-}
