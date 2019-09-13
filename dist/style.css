@@ -34,9 +34,8 @@
   font-style: normal;
 }
 /* starter css and high level, body  */
-html, body {
-  height: 100%;
-  padding: 2%;
+html {
+  padding: 1%;
 }
 
 body {
@@ -282,7 +281,7 @@ input {
 }
 
 .fancy {
-  width: 60%;
+  width: 55%;
   margin-left: auto;
   margin-right: auto;
 }
