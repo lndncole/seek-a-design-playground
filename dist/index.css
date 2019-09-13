@@ -1,0 +1,61 @@
+/* The CSS box-sizing property allows us to include the padding and border in an element's total width and height. */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* Here are the fonts that are used in the mockups. */
+@font-face {
+  font-family: 'AlexandriaFLF';
+  src: url('./assets/fonts/AlexandriaFLF/AlexandriaFLF.ttf.woff') format('woff'),
+       url('./assets/fonts/AlexandriaFLF/AlexandriaFLF.ttf.svg#AlexandriaFLF') format('svg'),
+       url('./assets/fonts/AlexandriaFLF/AlexandriaFLF.ttf.eot'),
+       url('./assets/fonts/AlexandriaFLF/AlexandriaFLF.ttf.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AlexandriaFLF-Bold';
+  src: url('./assets/fonts/AlexandriaFLF-Bold/AlexandriaFLF-Bold.ttf.woff') format('woff'),
+       url('./assets/fonts/AlexandriaFLF-Bold/AlexandriaFLF-Bold.ttf.svg#AlexandriaFLF-Bold') format('svg'),
+       url('./assets/fonts/AlexandriaFLF-Bold/AlexandriaFLF-Bold.ttf.eot'),
+       url('./assets/fonts/AlexandriaFLF-Bold/AlexandriaFLF-Bold.ttf.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ChandelleDisplay';
+  src: url('./assets/fonts/ChandelleDisplay/ChandelleDisplay.ttf.woff') format('woff'),
+       url('./assets/fonts/ChandelleDisplay/ChandelleDisplay.ttf.svg#ChandelleDisplay') format('svg'),
+       url('./assets/fonts/ChandelleDisplay/ChandelleDisplay.ttf.eot'),
+       url('./assets/fonts/ChandelleDisplay/ChandelleDisplay.ttf.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'ChandelleDisplay';
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  position: relative;
+  border: 10px solid green;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
